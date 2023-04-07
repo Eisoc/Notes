@@ -1,22 +1,21 @@
-2023.1.12
+2023.03
 
-用了两天，实现了Autoware.universe与Carla 0.9.13的联合仿真，本文用于记录本次仿真的过程
+# 写在前面：
+## 本种方法使用软件及依赖库：
+Carla with scenario_runner 0.9.13
+
+autoware-universe -b galactic
+
+openplanner from: https://github.com/ZATiTech/open_planner
+
+op-agent -b ros2
+
+op-bridge -b ros2 from: https://github.com/hatem-darweesh
+
 
 参考文章：[Autoware.Universe：如何在Carla 0.9.13上运行](https://blog.csdn.net/robotpengxu/article/details/127975566?spm=1001.2014.3001.5502)
 
 [Autoware.universe 和 carla simulator 联合仿真](https://blog.csdn.net/aerbeisishan2008/article/details/127064532?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167351395016800186561214%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=167351395016800186561214&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-127064532-null-null.142^v70^one_line,201^v4^add_ask&utm_term=Autoware.Universe&spm=1018.2226.3001.4187)
-
-# 硬件配置
-
-<img src="Autoware.universe_Carla联合仿真过程记录.assets/image-20230112165550729.png" alt="image-20230112165550729" style="zoom:80%;" />
-
-python版本：3.8
-
-显卡：Nvidia RTX3080 驱动470.16（可以使用高版本，本电脑由于其他软件需要较低版本的驱动所以才用的470.16）
-
-CUDA：11.4
-
-ROS2 galactic
 
 # 安装前的准备
 
