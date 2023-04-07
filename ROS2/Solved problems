@@ -1,8 +1,8 @@
-rosdep update:Skip end-of-life distro
+## rosdep update:Skip end-of-life distro
 https://blog.csdn.net/qq_38313901/article/details/119427055
 
 
-c++: internal compiler ereor: killed(program cciplus)
+## c++: internal compiler ereor: killed(program cciplus)
 https://blog.csdn.net/u011897411/article/details/89742008
 # 1. 创建分区
 sudo dd if=/dev/zero of=/swapfile bs=1M count=1024    # 1 * 1024 = 1024 创建 1 g 的内存分区
