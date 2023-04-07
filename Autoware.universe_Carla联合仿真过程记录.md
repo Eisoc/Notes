@@ -12,8 +12,16 @@ op-agent -b ros2
 
 op-bridge -b ros2 from: https://github.com/hatem-darweesh
 
+## Tips：
+本方法利用hatem教授个人开发的openplanner，主要是op-bridge,实现autoware-universe和carla通讯。
+最终本人复现绝大多数效果但engae始终无法运行，hatem教授在issue中回答道自己也会时常遇到相同错误，无确定解决方案，只能重启。
+最终本人复现效果图如下：
+![autoware-carla](https://user-images.githubusercontent.com/123466990/230656793-e1e84a3c-1aa8-45cf-acdb-dcbcefdaa4a4.png)
 
-参考文章：[Autoware.Universe：如何在Carla 0.9.13上运行](https://blog.csdn.net/robotpengxu/article/details/127975566?spm=1001.2014.3001.5502)
+
+参考文章：
+
+[Autoware.Universe：如何在Carla 0.9.13上运行](https://blog.csdn.net/robotpengxu/article/details/127975566?spm=1001.2014.3001.5502)
 
 [Autoware.universe 和 carla simulator 联合仿真](https://blog.csdn.net/aerbeisishan2008/article/details/127064532?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522167351395016800186561214%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=167351395016800186561214&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~sobaiduend~default-1-127064532-null-null.142^v70^one_line,201^v4^add_ask&utm_term=Autoware.Universe&spm=1018.2226.3001.4187)
 
