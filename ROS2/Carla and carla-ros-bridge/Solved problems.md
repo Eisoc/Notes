@@ -4,6 +4,7 @@
 
 ## carla attribute problem/ bridge process failed
 ### 不要使用pip3 install carla！！！使用此种方法导入egg。虽然py3.8，egg写着3.7，但实际只要py3都兼容
+### 不知道是否bug：一定要这样写：${CARLA_ROOT}/PythonAPI/util，如果直接使用绝对路径还是报错
 .bahrc
 ```
 export CARLA_ROOT=/home/bing/workspaces/carla/carla13
@@ -12,4 +13,5 @@ export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI
 export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/util
 export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/carla
 export PYTHONPATH=$PYTHONPATH:${CARLA_ROOT}/PythonAPI/carla/agents
+
 
