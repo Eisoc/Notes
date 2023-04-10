@@ -11,6 +11,7 @@ ros2 launch carla_ros_bridge carla_ros_bridge_with_example_ego_vehicle.launch.py
 ros2 run rviz2 rviz2
 ```
 ## Start Waypoint_publisher
+#### ~/carla-ros-bridge/src/ros-bridge/carla_waypoint_publisher/src/carla_waypoint_publisher/carla_waypoint_publisher.py
 #### when there is a goal published or there is a goal default, it will calculate the route and give the waypoints.
 ```
 ros2 launch carla_waypoint_publisher carla_waypoint_publisher.launch.py
@@ -32,3 +33,5 @@ ros2 topic pub /carla/ego_vehicle/target_speed std_msgs/Float64 "{data: 9.0}"
 ```
 ros2 topic pub /carla/ego_vehicle/goal geometry_msgs/PoseStamped "{header: {frame_id: 'map'}, pose: {position: {x: 118, y: -198, z: 0.0}, orientation: {w: 1}}}"
 ```
+
+#### next goal: directly use RVIZ to set the goal
