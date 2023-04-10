@@ -1,6 +1,7 @@
 ### Run carla
 ```
 ./CarlaUE4.sh -quality-level=Epic -prefernvidia
+./CarlaUE4.sh -carla-server -benchmark -fps=10 -windowed -ResX=300 -ResY=300 -prefernvidia
 ```
 ### Start the ROS bridge with RVIZ enabled
 ```
