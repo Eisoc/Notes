@@ -1,5 +1,7 @@
 ### Run carla
-
+```
+./CarlaUE4.sh -quality-level=Epic -prefernvidia
+```
 ### Start the ROS bridge with RVIZ enabled
 ```
 ROS 1
