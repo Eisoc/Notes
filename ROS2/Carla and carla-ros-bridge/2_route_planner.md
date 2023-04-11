@@ -33,5 +33,6 @@ ros2 topic pub /carla/ego_vehicle/target_speed std_msgs/Float64 "{data: 9.0}"
 ```
 ros2 topic pub /carla/ego_vehicle/goal geometry_msgs/PoseStamped "{header: {frame_id: 'map'}, pose: {position: {x: 118, y: -198, z: 0.0}, orientation: {w: 1}}}"
 ```
+# BRANCH: use 2D navi Goal in Rviz to set the goal
 
-#### next goal: directly use RVIZ to set the goal
+
