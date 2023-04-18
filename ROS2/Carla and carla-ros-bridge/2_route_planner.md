@@ -34,5 +34,17 @@ ros2 topic pub /carla/ego_vehicle/target_speed std_msgs/Float64 "{data: 9.0}"
 ros2 topic pub /carla/ego_vehicle/goal geometry_msgs/PoseStamped "{header: {frame_id: 'map'}, pose: {position: {x: 118, y: -198, z: 0.0}, orientation: {w: 1}}}"
 ```
 # BRANCH: use 2D navi Goal in Rviz to set the goal
+/home/bing/carla-ros-bridge/src/ros-bridge/carla_waypoint_publisher/src/carla_waypoint_publisher/carla_waypoint_publisher.py
+```
+        # set initial goal
+        self.goal = self.world.get_map().get_spawn_points()[0]
 
+        self.current_route = None
+        self.goal_subscriber = self.new_subscription(
+            PoseStamped,
+            #原代码：，订阅主题并不是RVIZ navi goal，修改为下面一行内容后即可使用 "/carla/{}/goal".format(self.role_name),
+            '/move_base_simple/goal',
+            self.on_goal,
+            qos_profile=10)
+```
 
