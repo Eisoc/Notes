@@ -48,3 +48,5 @@ ros2 topic pub /carla/ego_vehicle/goal geometry_msgs/PoseStamped "{header: {fram
             qos_profile=10)
 ```
 
+ros2 launch carla_ad_demo ad_agent_waypoint.launch.py town:=Town10HD_Opt spawn_point:=-24,-135.4,2,0,0,180
+
